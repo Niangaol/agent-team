@@ -1,0 +1,6 @@
+# 运行时状态（team-gate 落盘目录，不入库）
+plugins/agent-team/state/
+
+node_modules/
+*.log
+.DS_Store
