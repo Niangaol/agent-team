@@ -7,9 +7,10 @@
     "node": ">=18"
   },
   "scripts": {
-    "test": "node tests/two-session-state.mjs && node tests/agent-tool-boundaries.mjs && node tests/state-fault-tolerance.mjs",
+    "test": "node tests/two-session-state.mjs && node tests/state-fault-tolerance.mjs && node tests/agent-tool-boundaries.mjs && node tests/mcp-protocol.mjs",
     "test:two-session": "node tests/two-session-state.mjs",
     "test:boundaries": "node tests/agent-tool-boundaries.mjs",
-    "test:fault-tolerance": "node tests/state-fault-tolerance.mjs"
+    "test:fault-tolerance": "node tests/state-fault-tolerance.mjs",
+    "test:protocol": "node tests/mcp-protocol.mjs"
   }
 }
