@@ -3,10 +3,13 @@
   "private": true,
   "type": "module",
   "description": "agent-team 插件的最小验证集：多进程状态一致性与角色工具边界。",
-  "engines": { "node": ">=18" },
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
-    "test": "node tests/two-session-state.mjs && node tests/agent-tool-boundaries.mjs",
+    "test": "node tests/two-session-state.mjs && node tests/agent-tool-boundaries.mjs && node tests/state-fault-tolerance.mjs",
     "test:two-session": "node tests/two-session-state.mjs",
-    "test:boundaries": "node tests/agent-tool-boundaries.mjs"
+    "test:boundaries": "node tests/agent-tool-boundaries.mjs",
+    "test:fault-tolerance": "node tests/state-fault-tolerance.mjs"
   }
 }
